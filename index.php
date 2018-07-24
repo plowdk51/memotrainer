@@ -6,9 +6,10 @@
 </head>
 <body>
 
-<?php
-echo "<h1>Memo Trainer</h1>";
-?>
+<h1 id="question"></h1>
+<input type="text" name="answer" value="" id="answer" />
 
+<script type="text/javascript" src="jquery.min.js"></script>
+<script type="text/javascript" src="app.js"></script>
 </body>
 </html>

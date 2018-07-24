@@ -1,2 +1,5 @@
-body { background-color:#5E6A71; color:white; font-family:Verdana, sans-serif; }
-h1 { margin:50px; font-size:64px; }
+body { background-color:#424242; padding-left:50px; color:white; font-family:Verdana, sans-serif; }
+h1 { margin:50px 0; font-size:64px; }
+input { font-size:32px; padding:10px; color:white; background-color:#616161; border:none; display:block; box-sizing:border-box; width:90%; max-width:400px; }
+input:active, input:focus { outline:none; }
+#answer { border-bottom:4px solid #757575; }
