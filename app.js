@@ -1,4 +1,7 @@
 var curr;
+var correct = 0;
+var wrong = 0;
+
 var phrases = [
 	{ name: "ZO", val: "zero", used: false },
 	{ name: "OE", val: "one", used: false },
@@ -15,19 +18,34 @@ var phrases = [
 $(document).ready(function(){
 	getRandomPhrase();
 	
-	$("#answer").keypress(function (e) {
-		if(e.which == 13)
-		{
-			getRandomPhrase()
+	$("#answer").keypress(function(e){
+		if(e.which == 13){
+			checkAnswer($(this).val());
+			getRandomPhrase();
 			return false;  
 		}
 	}); 
 });
 
+function checkAnswer(txt){
+	if(phrases[curr].val == txt){
+		correct++;
+		$("body").animate({backgroundColor: "#4CAF50"}, function(){
+			$("body").animate({backgroundColor: "#424242"});
+		});
+	}
+	else{
+		wrong++;
+		$("body").animate({backgroundColor: "#F44336"}, function(){
+			$("body").animate({backgroundColor: "#424242"});
+		});
+	}
+}
+
 function getRandomPhrase(){
 	var num;
 	if(countUnusedPhrases() == 0){
-		$("#question").html("Done.");
+		$("#question").html(Math.floor((correct / (correct + wrong)) * 100) + "%");
 		$("#answer").blur();
 		$("#answer").val("");
 		$("#answer").hide();
@@ -42,8 +60,8 @@ function getRandomPhrase(){
 		}
 		
 		curr = num;
-		
 		$("#question").html(phrases[num].name);
+		$("#answer").val("");
 	}
 }
 
