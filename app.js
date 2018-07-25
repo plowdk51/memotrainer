@@ -3,460 +3,448 @@ var correct = 0;
 var wrong = 0;
 
 var phrases = [
-	{ name: "ZO", val: "zero", used: false },
-	{ name: "OE", val: "one", used: false },
+	// B
+	{ name: "BC", val: "zero", used: false },
+	{ name: "BD", val: "one", used: false },
+	{ name: "BF", val: "two", used: false },
+	{ name: "BG", val: "three", used: false },
+	{ name: "BH", val: "four", used: false },
+	{ name: "BI", val: "five", used: false },
+	{ name: "BJ", val: "six", used: false },
+	{ name: "BK", val: "seven", used: false },
+	{ name: "BL", val: "eight", used: false },
+	{ name: "BM", val: "nine", used: false },
+	{ name: "BN", val: "zero", used: false },
+	{ name: "BO", val: "one", used: false },
+	{ name: "BP", val: "two", used: false },
+	{ name: "BQ", val: "three", used: false },
+	{ name: "BS", val: "four", used: false },
+	{ name: "BT", val: "five", used: false },
+	{ name: "BU", val: "six", used: false },
+	{ name: "BV", val: "seven", used: false },
+	{ name: "BW", val: "eight", used: false },
+	{ name: "BX", val: "nine", used: false },
+	// C
+	{ name: "CB", val: "zero", used: false },
+	{ name: "CD", val: "one", used: false },
+	{ name: "CF", val: "two", used: false },
+	{ name: "CG", val: "three", used: false },
+	{ name: "CH", val: "four", used: false },
+	{ name: "CI", val: "five", used: false },
+	{ name: "CJ", val: "six", used: false },
+	{ name: "CK", val: "seven", used: false },
+	{ name: "CL", val: "eight", used: false },
+	{ name: "CM", val: "nine", used: false },
+	{ name: "CN", val: "zero", used: false },
+	{ name: "CO", val: "one", used: false },
+	{ name: "CP", val: "two", used: false },
+	{ name: "CQ", val: "three", used: false },
+	{ name: "CS", val: "four", used: false },
+	{ name: "CT", val: "five", used: false },
+	{ name: "CU", val: "six", used: false },
+	{ name: "CV", val: "seven", used: false },
+	{ name: "CW", val: "eight", used: false },
+	{ name: "CX", val: "nine", used: false },
+	// D
+	{ name: "DB", val: "zero", used: false },
+	{ name: "DC", val: "one", used: false },
+	{ name: "DF", val: "two", used: false },
+	{ name: "DG", val: "three", used: false },
+	{ name: "DH", val: "four", used: false },
+	{ name: "DI", val: "five", used: false },
+	{ name: "DJ", val: "six", used: false },
+	{ name: "DK", val: "seven", used: false },
+	{ name: "DL", val: "eight", used: false },
+	{ name: "DM", val: "nine", used: false },
+	{ name: "DN", val: "zero", used: false },
+	{ name: "DO", val: "one", used: false },
+	{ name: "DP", val: "two", used: false },
+	{ name: "DQ", val: "three", used: false },
+	{ name: "DS", val: "four", used: false },
+	{ name: "DT", val: "five", used: false },
+	{ name: "DU", val: "six", used: false },
+	{ name: "DV", val: "seven", used: false },
+	{ name: "DW", val: "eight", used: false },
+	{ name: "DX", val: "nine", used: false },
+	// F
+	{ name: "FB", val: "zero", used: false },
+	{ name: "FC", val: "one", used: false },
+	{ name: "FD", val: "two", used: false },
+	{ name: "FG", val: "three", used: false },
+	{ name: "FH", val: "four", used: false },
+	{ name: "FI", val: "five", used: false },
+	{ name: "FJ", val: "six", used: false },
+	{ name: "FK", val: "seven", used: false },
+	{ name: "FL", val: "eight", used: false },
+	{ name: "FM", val: "nine", used: false },
+	{ name: "FN", val: "zero", used: false },
+	{ name: "FO", val: "one", used: false },
+	{ name: "FP", val: "two", used: false },
+	{ name: "FQ", val: "three", used: false },
+	{ name: "FS", val: "four", used: false },
+	{ name: "FT", val: "five", used: false },
+	{ name: "FU", val: "six", used: false },
+	{ name: "FV", val: "seven", used: false },
+	{ name: "FW", val: "eight", used: false },
+	{ name: "FX", val: "nine", used: false },
+	// G
+	{ name: "GB", val: "zero", used: false },
+	{ name: "GC", val: "one", used: false },
+	{ name: "GD", val: "two", used: false },
+	{ name: "GF", val: "three", used: false },
+	{ name: "GH", val: "four", used: false },
+	{ name: "GI", val: "five", used: false },
+	{ name: "GJ", val: "six", used: false },
+	{ name: "GK", val: "seven", used: false },
+	{ name: "GL", val: "eight", used: false },
+	{ name: "GM", val: "nine", used: false },
+	{ name: "GN", val: "zero", used: false },
+	{ name: "GO", val: "one", used: false },
+	{ name: "GP", val: "two", used: false },
+	{ name: "GQ", val: "three", used: false },
+	{ name: "GS", val: "four", used: false },
+	{ name: "GT", val: "five", used: false },
+	{ name: "GU", val: "six", used: false },
+	{ name: "GV", val: "seven", used: false },
+	{ name: "GW", val: "eight", used: false },
+	{ name: "GX", val: "nine", used: false },
+	// H
+	{ name: "HB", val: "zero", used: false },
+	{ name: "HC", val: "one", used: false },
+	{ name: "HD", val: "two", used: false },
+	{ name: "HF", val: "three", used: false },
+	{ name: "HG", val: "four", used: false },
+	{ name: "HI", val: "five", used: false },
+	{ name: "HJ", val: "six", used: false },
+	{ name: "HK", val: "seven", used: false },
+	{ name: "HL", val: "eight", used: false },
+	{ name: "HM", val: "nine", used: false },
+	{ name: "HN", val: "zero", used: false },
+	{ name: "HO", val: "one", used: false },
+	{ name: "HP", val: "two", used: false },
+	{ name: "HQ", val: "three", used: false },
+	{ name: "HS", val: "four", used: false },
+	{ name: "HT", val: "five", used: false },
+	{ name: "HU", val: "six", used: false },
+	{ name: "HV", val: "seven", used: false },
+	{ name: "HW", val: "eight", used: false },
+	{ name: "HX", val: "nine", used: false },
+	// I
+	{ name: "IB", val: "zero", used: false },
+	{ name: "IC", val: "one", used: false },
+	{ name: "ID", val: "two", used: false },
+	{ name: "IF", val: "three", used: false },
+	{ name: "IG", val: "five", used: false },
+	{ name: "IH", val: "six", used: false },
+	{ name: "IJ", val: "seven", used: false },
+	{ name: "IK", val: "eight", used: false },
+	{ name: "IL", val: "nine", used: false },
+	{ name: "IM", val: "zero", used: false },
+	{ name: "IN", val: "one", used: false },
+	{ name: "IO", val: "two", used: false },
+	{ name: "IP", val: "three", used: false },
+	{ name: "IQ", val: "four", used: false },
+	{ name: "IS", val: "five", used: false },
+	{ name: "IT", val: "six", used: false },
+	{ name: "IU", val: "seven", used: false },
+	{ name: "IV", val: "eight", used: false },
+	{ name: "IW", val: "nine", used: false },
+	{ name: "IX", val: "four", used: false },
+	// J
+	{ name: "JB", val: "zero", used: false },
+	{ name: "JC", val: "one", used: false },
+	{ name: "JD", val: "two", used: false },
+	{ name: "JF", val: "three", used: false },
+	{ name: "JG", val: "four", used: false },
+	{ name: "JH", val: "five", used: false },
+	{ name: "JI", val: "six", used: false },
+	{ name: "JK", val: "seven", used: false },
+	{ name: "JL", val: "eight", used: false },
+	{ name: "JM", val: "nine", used: false },
+	{ name: "JN", val: "zero", used: false },
+	{ name: "JO", val: "one", used: false },
+	{ name: "JP", val: "two", used: false },
+	{ name: "JQ", val: "three", used: false },
+	{ name: "JS", val: "four", used: false },
+	{ name: "JT", val: "five", used: false },
+	{ name: "JU", val: "six", used: false },
+	{ name: "JV", val: "seven", used: false },
+	{ name: "JW", val: "eight", used: false },
+	{ name: "JX", val: "nine", used: false },
+	// K
+	{ name: "KB", val: "zero", used: false },
+	{ name: "KC", val: "one", used: false },
+	{ name: "KD", val: "two", used: false },
+	{ name: "KF", val: "three", used: false },
+	{ name: "KG", val: "four", used: false },
+	{ name: "KH", val: "five", used: false },
+	{ name: "KI", val: "six", used: false },
+	{ name: "KJ", val: "seven", used: false },
+	{ name: "KL", val: "eight", used: false },
+	{ name: "KM", val: "nine", used: false },
+	{ name: "KN", val: "zero", used: false },
+	{ name: "KO", val: "one", used: false },
+	{ name: "KP", val: "two", used: false },
+	{ name: "KQ", val: "three", used: false },
+	{ name: "KS" val: "five", used: false },
+	{ name: "KT", val: "six", used: false },
+	{ name: "KU", val: "seven", used: false },
+	{ name: "KV", val: "eight", used: false },
+	{ name: "KW", val: "nine", used: false },
+	{ name: "KX", val: "nine", used: false },
+	// L
+	{ name: "LB", val: "zero", used: false },
+	{ name: "LC", val: "one", used: false },
+	{ name: "LD", val: "two", used: false },
+	{ name: "LF", val: "three", used: false },
+	{ name: "LG", val: "four", used: false },
+	{ name: "LH", val: "five", used: false },
+	{ name: "LI", val: "six", used: false },
+	{ name: "LJ", val: "seven", used: false },
+	{ name: "LK", val: "eight", used: false },
+	{ name: "LM", val: "nine", used: false },
+	{ name: "LN", val: "zero", used: false },
+	{ name: "LO", val: "one", used: false },
+	{ name: "LP", val: "two", used: false },
+	{ name: "LQ", val: "three", used: false },
+	{ name: "LS", val: "four", used: false },
+	{ name: "LT", val: "five", used: false },
+	{ name: "LU", val: "six", used: false },
+	{ name: "LV", val: "seven", used: false },
+	{ name: "LW", val: "eight", used: false },
+	{ name: "LX", val: "nine", used: false },
+	// M
+	{ name: "MB", val: "zero", used: false },
+	{ name: "MC", val: "one", used: false },
+	{ name: "MD", val: "two", used: false },
+	{ name: "MF", val: "three", used: false },
+	{ name: "MG", val: "four", used: false },
+	{ name: "MH", val: "five", used: false },
+	{ name: "MI", val: "six", used: false },
+	{ name: "MJ", val: "seven", used: false },
+	{ name: "MK", val: "eight", used: false },
+	{ name: "ML", val: "nine", used: false },
+	{ name: "MN", val: "zero", used: false },
+	{ name: "MO", val: "one", used: false },
+	{ name: "MP", val: "two", used: false },
+	{ name: "MQ", val: "three", used: false },
+	{ name: "MS", val: "four", used: false },
+	{ name: "MT", val: "five", used: false },
+	{ name: "MU", val: "six", used: false },
+	{ name: "MV", val: "seven", used: false },
+	{ name: "MW", val: "eight", used: false },
+	{ name: "MX", val: "nine", used: false },
+	// N
+	{ name: "NB", val: "zero", used: false },
+	{ name: "NC", val: "one", used: false },
+	{ name: "ND", val: "two", used: false },
+	{ name: "NF", val: "three", used: false },
+	{ name: "NG", val: "four", used: false },
+	{ name: "NH", val: "five", used: false },
+	{ name: "NI", val: "six", used: false },
+	{ name: "NJ", val: "seven", used: false },
+	{ name: "NK", val: "eight", used: false },
+	{ name: "NL", val: "nine", used: false },
+	{ name: "NM", val: "zero", used: false },
+	{ name: "NO", val: "one", used: false },
+	{ name: "NP", val: "two", used: false },
+	{ name: "NQ", val: "three", used: false },
+	{ name: "NS", val: "four", used: false },
+	{ name: "NT", val: "five", used: false },
+	{ name: "NU", val: "six", used: false },
+	{ name: "NV", val: "seven", used: false },
+	{ name: "NW", val: "eight", used: false },
+	{ name: "NX", val: "nine", used: false },
+	// O
+	{ name: "OB", val: "zero", used: false },
+	{ name: "OC", val: "one", used: false },
+	{ name: "OD", val: "two", used: false },
+	{ name: "OF", val: "three", used: false },
+	{ name: "OG", val: "four", used: false },
+	{ name: "OH", val: "five", used: false },
+	{ name: "OI", val: "six", used: false },
+	{ name: "OJ", val: "seven", used: false },
+	{ name: "OK", val: "eight", used: false },
+	{ name: "OL", val: "nine", used: false },
+	{ name: "OM", val: "zero", used: false },
+	{ name: "ON", val: "one", used: false },
+	{ name: "OP", val: "two", used: false },
+	{ name: "OQ", val: "three", used: false },
+	{ name: "OS", val: "four", used: false },
+	{ name: "OT", val: "five", used: false },
+	{ name: "OU", val: "six", used: false },
+	{ name: "OV", val: "seven", used: false },
+	{ name: "OW", val: "eight", used: false },
+	{ name: "OX", val: "nine", used: false },
+	// P
+	{ name: "PB", val: "zero", used: false },
+	{ name: "PC", val: "one", used: false },
+	{ name: "PD", val: "two", used: false },
+	{ name: "PF", val: "three", used: false },
+	{ name: "PG", val: "four", used: false },
+	{ name: "PH", val: "five", used: false },
+	{ name: "PI", val: "six", used: false },
+	{ name: "PJ", val: "seven", used: false },
+	{ name: "PK", val: "eight", used: false },
+	{ name: "PL", val: "nine", used: false },
+	{ name: "PM", val: "zero", used: false },
+	{ name: "PN", val: "one", used: false },
+	{ name: "PO", val: "two", used: false },
+	{ name: "PQ", val: "three", used: false },
+	{ name: "PS", val: "four", used: false },
+	{ name: "PT", val: "five", used: false },
+	{ name: "PU", val: "six", used: false },
+	{ name: "PV", val: "seven", used: false },
+	{ name: "PW", val: "eight", used: false },
+	{ name: "PX", val: "nine", used: false },
+	// Q
+	{ name: "QB", val: "zero", used: false },
+	{ name: "QC", val: "one", used: false },
+	{ name: "QD", val: "two", used: false },
+	{ name: "QF", val: "three", used: false },
+	{ name: "QG", val: "four", used: false },
+	{ name: "QH", val: "five", used: false },
+	{ name: "QI", val: "six", used: false },
+	{ name: "QJ", val: "seven", used: false },
+	{ name: "QK", val: "eight", used: false },
+	{ name: "QL", val: "nine", used: false },
+	{ name: "QM", val: "zero", used: false },
+	{ name: "QN", val: "one", used: false },
+	{ name: "QO", val: "two", used: false },
+	{ name: "QP", val: "three", used: false },
+	{ name: "QS", val: "four", used: false },
+	{ name: "QT", val: "five", used: false },
+	{ name: "QU", val: "six", used: false },
+	{ name: "QV", val: "seven", used: false },
+	{ name: "QW", val: "eight", used: false },
+	{ name: "QX", val: "nine", used: false },
+	// S
+	{ name: "SB", val: "zero", used: false },
+	{ name: "SC", val: "one", used: false },
+	{ name: "SD", val: "two", used: false },
+	{ name: "SF", val: "three", used: false },
+	{ name: "SG", val: "four", used: false },
+	{ name: "SH", val: "five", used: false },
+	{ name: "SI", val: "six", used: false },
+	{ name: "SJ", val: "seven", used: false },
+	{ name: "SK", val: "eight", used: false },
+	{ name: "SL", val: "nine", used: false },
+	{ name: "SM", val: "zero", used: false },
+	{ name: "SN", val: "one", used: false },
+	{ name: "SO", val: "two", used: false },
+	{ name: "SP", val: "three", used: false },
+	{ name: "SQ", val: "four", used: false },
+	{ name: "ST", val: "five", used: false },
+	{ name: "SU", val: "six", used: false },
+	{ name: "SV", val: "seven", used: false },
+	{ name: "SW", val: "eight", used: false },
+	{ name: "SX", val: "nine", used: false },
+	// T
+	{ name: "TB", val: "zero", used: false },
+	{ name: "TC", val: "one", used: false },
+	{ name: "TD", val: "two", used: false },
+	{ name: "TF", val: "three", used: false },
+	{ name: "TG", val: "four", used: false },
+	{ name: "TH", val: "five", used: false },
+	{ name: "TI", val: "six", used: false },
+	{ name: "TJ", val: "seven", used: false },
+	{ name: "TK", val: "eight", used: false },
+	{ name: "TL", val: "nine", used: false },
+	{ name: "TM", val: "zero", used: false },
+	{ name: "TN", val: "one", used: false },
 	{ name: "TO", val: "two", used: false },
-	{ name: "TE", val: "three", used: false },
-	{ name: "FR", val: "four", used: false },
-	{ name: "FE", val: "five", used: false },
-	{ name: "SX", val: "six", used: false },
-	{ name: "SN", val: "seven", used: false },
-	{ name: "ET", val: "eight", used: false },
-	{ name: "NE", val: "nine", used: false }
+	{ name: "TP", val: "three", used: false },
+	{ name: "TQ", val: "four", used: false },
+	{ name: "TS", val: "five", used: false },
+	{ name: "TU", val: "six", used: false },
+	{ name: "TV", val: "seven", used: false },
+	{ name: "TW", val: "eight", used: false },
+	{ name: "TX", val: "nine", used: false },
+	// U
+	{ name: "UB", val: "zero", used: false },
+	{ name: "UC", val: "one", used: false },
+	{ name: "UD", val: "two", used: false },
+	{ name: "UF", val: "three", used: false },
+	{ name: "UG", val: "four", used: false },
+	{ name: "UH", val: "five", used: false },
+	{ name: "UI", val: "six", used: false },
+	{ name: "UJ", val: "seven", used: false },
+	{ name: "UK", val: "eight", used: false },
+	{ name: "UL", val: "nine", used: false },
+	{ name: "UM", val: "zero", used: false },
+	{ name: "UN", val: "one", used: false },
+	{ name: "UO", val: "two", used: false },
+	{ name: "UP", val: "three", used: false },
+	{ name: "UQ", val: "four", used: false },
+	{ name: "US", val: "five", used: false },
+	{ name: "UT", val: "six", used: false },
+	{ name: "UV", val: "seven", used: false },
+	{ name: "UW", val: "eight", used: false },
+	{ name: "UX", val: "nine", used: false },
+	// V
+	{ name: "VB", val: "zero", used: false },
+	{ name: "VC", val: "one", used: false },
+	{ name: "VD", val: "two", used: false },
+	{ name: "VF", val: "three", used: false },
+	{ name: "VG", val: "four", used: false },
+	{ name: "VH", val: "five", used: false },
+	{ name: "VI", val: "six", used: false },
+	{ name: "VJ", val: "seven", used: false },
+	{ name: "VK", val: "eight", used: false },
+	{ name: "VL", val: "nine", used: false },
+	{ name: "VM", val: "zero", used: false },
+	{ name: "VN", val: "one", used: false },
+	{ name: "VO", val: "two", used: false },
+	{ name: "VP", val: "three", used: false },
+	{ name: "VQ", val: "four", used: false },
+	{ name: "VS", val: "five", used: false },
+	{ name: "VT", val: "six", used: false },
+	{ name: "VU", val: "seven", used: false },
+	{ name: "VW", val: "eight", used: false },
+	{ name: "VX", val: "nine", used: false },
+	// W
+	{ name: "WB", val: "zero", used: false },
+	{ name: "WC", val: "one", used: false },
+	{ name: "WD", val: "two", used: false },
+	{ name: "WF", val: "three", used: false },
+	{ name: "WG", val: "four", used: false },
+	{ name: "WH", val: "five", used: false },
+	{ name: "WI", val: "six", used: false },
+	{ name: "WJ", val: "seven", used: false },
+	{ name: "WK", val: "eight", used: false },
+	{ name: "WL", val: "nine", used: false },
+	{ name: "WM", val: "zero", used: false },
+	{ name: "WN", val: "one", used: false },
+	{ name: "WO", val: "two", used: false },
+	{ name: "WP", val: "three", used: false },
+	{ name: "WQ", val: "four", used: false },
+	{ name: "WS", val: "five", used: false },
+	{ name: "WT", val: "six", used: false },
+	{ name: "WU", val: "seven", used: false },
+	{ name: "WV", val: "eight", used: false },
+	{ name: "WX", val: "nine", used: false },
+	// X
+	{ name: "XB", val: "zero", used: false },
+	{ name: "XC", val: "one", used: false },
+	{ name: "XD", val: "two", used: false },
+	{ name: "XF", val: "three", used: false },
+	{ name: "XG", val: "four", used: false },
+	{ name: "XH", val: "five", used: false },
+	{ name: "XI", val: "six", used: false },
+	{ name: "XJ", val: "seven", used: false },
+	{ name: "XK", val: "eight", used: false },
+	{ name: "XL", val: "nine", used: false },
+	{ name: "XM", val: "zero", used: false },
+	{ name: "XN", val: "one", used: false },
+	{ name: "XO", val: "two", used: false },
+	{ name: "XP", val: "three", used: false },
+	{ name: "XQ", val: "four", used: false },
+	{ name: "XS", val: "five", used: false },
+	{ name: "XT", val: "six", used: false },
+	{ name: "XU", val: "seven", used: false },
+	{ name: "XV", val: "eight", used: false },
+	{ name: "XW", val: "nine", used: false },
 ];
-
-/*
-BC
-BD
-BF
-BG
-BH
-BI
-BJ
-BK
-BL
-BM
-BN
-BO
-BP
-BQ
-BS
-BT
-BU
-BV
-BW
-BX
-
-CB
-CD
-CF
-CG
-CH
-CI
-CJ
-CK
-CL
-CM
-CN
-CO
-CP
-CQ
-CS
-CT
-CU
-CV
-CW
-CX
-
-DB
-DC
-DF
-DG
-DH
-DI
-DJ
-DK
-DL
-DM
-DN
-DO
-DP
-DQ
-DS
-DT
-DU
-DV
-DW
-DX
-
-FB
-FC
-FD
-FG
-FH
-FI
-FJ
-FK
-FL
-FM
-FN
-FO
-FP
-FQ
-FS
-FT
-FU
-FV
-FW
-FX
-
-GB
-GC
-GD
-GF
-GH
-GI
-GJ
-GK
-GL
-GM
-GN
-GO
-GP
-GQ
-GS
-GT
-GU
-GV
-GW
-GX
-
-HB
-HC
-HD
-HF
-HG
-HI
-HJ
-HK
-HL
-HM
-HN
-HO
-HP
-HQ
-HS
-HT
-HU
-HV
-HW
-HX
-
-IB
-IC
-ID
-IF
-IG
-IH
-IJ
-IK
-IL
-IM
-IN
-IO
-IP
-IQ
-IS
-IT
-IU
-IV
-IW
-IX
-
-JB
-JC
-JD
-JF
-JG
-JH
-JI
-JK
-JL
-JM
-JN
-JO
-JP
-JQ
-JS
-JT
-JU
-JV
-JW
-JX
-
-KB
-KC
-KD
-KF
-KG
-KH
-KI
-KJ
-KL
-KM
-KN
-KO
-KP
-KQ
-KS
-KT
-KU
-KV
-KW
-KX
-
-LB
-LC
-LD
-LF
-LG
-LH
-LI
-LJ
-LK
-LM
-LN
-LO
-LP
-LQ
-LS
-LT
-LU
-LV
-LW
-LX
-
-MB
-MC
-MD
-MF
-MG
-MH
-MI
-MJ
-MK
-ML
-MN
-MO
-MP
-MQ
-MS
-MT
-MU
-MV
-MW
-MX
-
-NB
-NC
-ND
-NF
-NG
-NH
-NI
-NJ
-NK
-NL
-NM
-NO
-NP
-NQ
-NS
-NT
-NU
-NV
-NW
-NX
-
-OB
-OC
-OD
-OF
-OG
-OH
-OI
-OJ
-OK
-OL
-OM
-ON
-OP
-OQ
-OS
-OT
-OU
-OV
-OW
-OX
-
-PB
-PC
-PD
-PF
-PG
-PH
-PI
-PJ
-PK
-PL
-PM
-PN
-PO
-PQ
-PS
-PT
-PU
-PV
-PW
-PX
-
-QB
-QC
-QD
-QF
-QG
-QH
-QI
-QJ
-QK
-QL
-QM
-QN
-QO
-QP
-QS
-QT
-QU
-QV
-QW
-QX
-
-SB
-SC
-SD
-SF
-SG
-SH
-SI
-SJ
-SK
-SL
-SM
-SN
-SO
-SP
-SQ
-ST
-SU
-SV
-SW
-SX
-
-TB
-TC
-TD
-TF
-TG
-TH
-TI
-TJ
-TK
-TL
-™
-TN
-TO
-TP
-TQ
-TS
-TU
-TV
-TW
-TX
-
-UB
-UC
-UD
-UF
-UG
-UH
-UI
-UJ
-UK
-UL
-UM
-UN
-UO
-UP
-UQ
-US
-UT
-UV
-UW
-UX
-
-VB
-VC
-VD
-VF
-VG
-VH
-VI
-VJ
-VK
-VL
-VM
-VN
-VO
-VP
-VQ
-VS
-VT
-VU
-VW
-VX
-
-WB
-WC
-WD
-WF
-WG
-WH
-WI
-WJ
-WK
-WL
-WM
-WN
-WO
-WP
-WQ
-WS
-WT
-WU
-WV
-WX
-
-XB
-XC
-XD
-XF
-XG
-XH
-XI
-XJ
-XK
-XL
-XM
-XN
-XO
-XP
-XQ
-XS
-XT
-XU
-XV
-XW
-*/
 
 $(document).ready(function(){
 	getRandomPhrase();
