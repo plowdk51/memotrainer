@@ -3,3 +3,5 @@ h1 { margin:50px 0; font-size:64px; }
 input { font-size:32px; padding:10px; color:white; background-color:#616161; border:none; display:block; box-sizing:border-box; width:90%; max-width:400px; }
 input:active, input:focus { outline:none; }
 #answer { border-bottom:4px solid #757575; }
+#score,
+#stats { color:#757575; }
